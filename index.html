@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Client</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0e27;
+        }
+        .bg-mine {
+            background-image: url('mine.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="text-white bg-mine min-h-screen">
+  
+    <div class="fixed inset-0 bg-[#0a0e27]/60 backdrop-blur-sm pointer-events-none"></div>
+
+    <div class="relative z-10">
+
+        <header class="relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#1a1f3a]/80 to-[#0a0e27]/95"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-6 py-20 text-center">
+                <h1 class="text-7xl font-bold mb-6 bg-gradient-to-r from-[#4a5fd9] to-[#7b8ff5] bg-clip-text text-transparent">
+                    Midnight
+                </h1>
+                <p class="text-2xl text-[#8b92c7] mb-4">
+                    Utility Ghost Client for Minecraft
+                </p>
+                <div class="inline-block bg-[#1a1f3a] border border-[#4a5fd9] rounded-full px-6 py-2 mb-8">
+                    <span class="text-[#7b8ff5] font-semibold">100% FREE</span>
+                </div>
+
+                <p class="text-lg text-[#6b72a8] max-w-2xl mx-auto mb-8">
+                    An updated version of Crosssine Client featuring enhancements from FDP Client and more. Developed by <span class="text-[#7b8ff5] font-semibold">drico</span>.
+                </p>
+
+                <a href="https://github.com/MidnightORG/" target="_blank" class="inline-flex items-center gap-3 bg-[#4a5fd9] hover:bg-[#5a6fe9] transition-colors px-8 py-4 rounded-lg text-lg font-semibold">
+                    <i data-lucide="github"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </header>
+
+        <section class="max-w-7xl mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#8b92c7]">Client Showcase</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-xl border border-[#1a1f3a] bg-[#0f1329] hover:border-[#4a5fd9] transition-all">
+                    <video autoPlay loop muted playsInline class="w-full h-64 object-cover">
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#0a0e27] to-transparent">
+                        <p class="text-sm text-[#8b92c7]">Feature Showcase 1</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-[#1a1f3a] bg-[#0f1329] hover:border-[#4a5fd9] transition-all">
+                    <video autoPlay loop muted playsInline class="w-full h-64 object-cover">
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#0a0e27] to-transparent">
+                        <p class="text-sm text-[#8b92c7]">Feature Showcase 2</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl border border-[#1a1f3a] bg-[#0f1329] hover:border-[#4a5fd9] transition-all">
+                    <video autoPlay loop muted playsInline class="w-full h-64 object-cover">
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#0a0e27] to-transparent">
+                        <p class="text-sm text-[#8b92c7]">Feature Showcase 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-16">
+            <div class="bg-[#0f1329] border border-[#1a1f3a] rounded-2xl p-8">
+                <h3 class="text-3xl font-bold mb-6 text-[#8b92c7]">About Midnight</h3>
+                <div class="grid md:grid-cols-2 gap-6 text-[#6b72a8]">
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#7b8ff5] mb-2">Based on Crosssine</h4>
+                        <p>Built upon the solid foundation of Crosssine Client with significant updates and improvements.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#7b8ff5] mb-2">FDP Features</h4>
+                        <p>Incorporates powerful features from FDP Client and additional custom enhancements.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#7b8ff5] mb-2">Ghost Client</h4>
+                        <p>Designed as a utility ghost client for enhanced gameplay without detection.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-[#7b8ff5] mb-2">Open Source</h4>
+                        <p>Completely free and open source. Contribute on GitHub!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-[#1a1f3a] mt-20">
+            <div class="max-w-7xl mx-auto px-6 py-8 text-center text-[#6b72a8]">
+                <p>Developed by <span class="text-[#7b8ff5] font-semibold">drico</span></p>
+                <p class="text-sm mt-2">Midnight Client &copy; 2026</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
